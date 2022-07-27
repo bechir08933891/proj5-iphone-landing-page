@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* global setups */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    transition: .3s linear;
+    overflow: hidden;
+}
+
+.container{
+    position: relative; /*make it relative to allow children to be absolute*/
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(90deg, #232526, #414345); /*for more https://uigradients.com/*/
+}
+
+/* header */
+header{
+    display: flex; /*to devide btwn all items*/
+    justify-content: space-between; /*make space between all items*/
+    align-items: center;
+    /* make the header in the middle */
+    width: 80%;
+    margin: auto;
+    padding: 1.5rem 0;
+}
+header .logo{
+    width: 5%;
+    height: auto;
+}
+ul{
+    width: 45%;
+}
+ul li{
+    /* make all items aligned */
+    /* also les puse yna7ehom */
+    display: inline-block;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    margin: 0 1rem;
+    text-transform: capitalize;
+    font-size: 1rem;
+}
+ul li a:hover{
+    color: #ec008c
+}
+
+/* content devide into 2 big section */
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+.content .text{
+    width: 60%;
+    color: #fff;
+}
+.content .text h2{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+.content .text p{
+    font-size: 1.2rem;
+    margin: 1.4rem 0;
+    font-weight: 300;
+}
+.content .text a{
+    text-decoration: none;
+    color: #fff;
+    background: #ec008c;
+    padding: 1rem 1.4rem;
+    border-radius: 5px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.content .text a:hover{
+    background: #fc6767;
+}
+/* style the big image */
+.content .images{
+    width: 30%;
+}
+.content .images img{
+    width: 65%;
+    height: auto;
+}
+
+
+/* icons  */
+.icons{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.icons img{
+    width: 50px;
+    cursor: pointer;
+}
+.icons img:hover{
+    transform: scale(1.2);
+}
